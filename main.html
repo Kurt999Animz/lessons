@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lessons & Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated background grid -->
+    <div id="background-grid"></div>
+
+    <!-- Lesson Interface -->
+    <div id="lessonInterface" class="interface active">
+        <h2 id="lessonTitle">Lesson 1: HTML Structure</h2>
+        <div id="lessonContent">
+            The basic structure of an HTML page. <br>Your goal: <b>Create a basic HTML structure.</b>
+        </div>
+        <div id="lessonNav">
+            <button id="prevLesson">&lt;-</button>
+            <button id="nextLesson">-&gt;</button>
+        </div>
+        <p>Go to the <b>Battle</b> tab to test your code and fight the bug!</p>
+    </div>
+
+    <!-- Battle Interface -->
+    <div id="battleInterface" class="interface">
+        <!-- The battle.html page will be transparent, showing the grid behind it -->
+        <iframe id="battleFrame" src="battle.html" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <span id="lessonTab" class="active-tab">LESSON</span>
+        <span id="battleTab">BATTLE</span>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal">
+        <div id="modalContent">
+            <span id="modalClose">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC START -->
+    <script src="script.js"></script>
+    <!-- JAVASCRIPT LOGIC END -->
+
+</body>
+
+</html>
